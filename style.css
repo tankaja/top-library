@@ -1,0 +1,203 @@
+body {
+  margin: 0px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+}
+
+.lib {
+  font-size: 3rem;
+  font-weight: 900;
+  padding: 2rem;
+  background-color: aquamarine;
+}
+
+.btn {
+  padding: 2rem;
+}
+
+.btn button {
+  height: 4rem;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+/* bottom */
+.bottom {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: black;
+  padding-top: 1rem;
+  gap: 1rem;
+  height: 100%;
+}
+
+.heading {
+  font-size: 2rem;
+  margin: 1rem;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-weight: 600;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* left */
+.data {
+  background-color:aliceblue;
+  padding: 1rem;
+  grid-column: 1/2;
+}
+
+#books {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+/* Book */
+.newBook {
+  border: 0.5rem solid black;
+  border-radius: 5px;
+  background-color:aquamarine;
+  font-size: large;
+  padding: 0.6rem;
+}
+
+.databook {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 12rem;
+  padding: 0%;
+  background-color:aquamarine;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+.author {
+  text-align: right;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+}
+
+.edit, .remove{
+  flex-grow: 1;
+}
+
+.pages {
+  font-size: small;
+}
+
+/* right */
+.stats {
+  background-color: aliceblue;
+  padding: 1rem;
+  grid-column: 2/3;
+}
+
+/* table */
+table {
+  border: 1px solid black;
+}
+
+th {
+  text-align: left;
+  border: 1px solid black;
+}
+
+td {
+  text-align: right;
+  border: 1px solid black;
+}
+
+
+/* form */
+.openBtn {
+  display: flex;
+  justify-content: left;
+}
+.openButton {
+  border: none;
+  border-radius: 5px;
+  background-color: #1c87c9;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+  position: fixed;
+}
+.loginPopup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 5%;
+  transform: translate(-50%, 5%);
+  border: 3px solid #999999;
+  z-index: 9;
+}
+.formContainer{
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+}
+.formContainer input[type=text],
+.formContainer input[type=number],
+select {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #eee;
+}
+.formContainer input[type=text]:focus,
+.formContainer input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #8ebf42;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+.formContainer .cancel {
+  background-color: #cc0000;
+}
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1;
+}

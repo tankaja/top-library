@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="top">
+                <div class="lib">
+                    Library
+                </div>
+                <div class="btn">
+                    <button class="openBtn" onclick="openForm()">+</button>
+                </div>
+            </div>
+
+            <div class="bottom">
+
+                <div class ="data">
+                    <div class="heading">Books</div>
+
+                    <div id="books">
+
+                    </div>
+                    <div class="form">
+                        <div class="loginPopup">
+                            <div class="formPopup" id="popupForm">
+                                <form class="formContainer">
+                                    <h2>Add a book</h2>
+
+                                    <label for="title">
+                                        <strong>Title</strong>
+                                    </label>
+                                    <input type="text" id="title" placeholder="Title" name="title" required>
+                                    
+                                    <label for="author">
+                                        <strong>Author</strong>
+                                    </label>
+                                    <input type="text" id="author" placeholder="Author" name="author" required>
+                                    
+                                    <label for="pages">
+                                        <strong>Number of Pages</strong>
+                                    </label>
+                                    <input type="number" id="pages" placeholder="Pages" name="pages" required>
+                                    
+                                    <label for="read">
+                                        <strong>Reading Status</strong>
+                                    </label>
+                                    <select name="cars" id="read" required>
+                                        <option value="Read">Read</option>
+                                        <option value="Not Read">Not Read</option>
+                                    </select>
+
+                                    <button type="button" class="btn" onclick="addBookToLibrary()">Add</button>
+                                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="loginPopup">
+                            <div class="formPopup" id="editPopupForm">
+                                <form class="formContainer">
+                                    <h2>Edit</h2>
+
+                                    <label for="title">
+                                        <strong>Title</strong>
+                                    </label>
+                                    <input type="text" id="edittitle" placeholder="Title" name="title" required>
+                                    
+                                    <label for="author">
+                                        <strong>Author</strong>
+                                    </label>
+                                    <input type="text" id="editauthor" placeholder="Author" name="author" required>
+                                    
+                                    <label for="pages">
+                                        <strong>Number of Pages</strong>
+                                    </label>
+                                    <input type="number" id="editpages" placeholder="Pages" name="pages" required>
+                                    
+                                    <label for="read">
+                                        <strong>Reading Status</strong>
+                                    </label>
+                                    <select name="cars" id="editread" required>
+                                        <option value="Read">Read</option>
+                                        <option value="Not Read">Not Read</option>
+                                    </select>
+
+                                    <button type="button" class="btn" onclick="addBookAfterEdit()">Edit</button>
+                                    <button type="button" class="btn cancel" onclick="closeEditForm()">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="heading">Library Stats</div>
+                    <div class="booksavailable">
+                        <span>Books Available: </span>
+                        <span id="booksavailable"></span>
+                    </div>
+                    <div class="read">
+                        <span>Read: </span>
+                        <span id="readid"></span>
+                    </div>
+                    <div class="unread">
+                        <span>Unread: </span>
+                        <span id="unreadid"></span>
+                    </div>
+                </div>
+
+            </div>
+            
+            <footer>The Odin Project</footer>
+
+        </div>
+    </body>
+</html>
